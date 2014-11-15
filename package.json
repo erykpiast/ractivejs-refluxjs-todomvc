@@ -1,14 +1,14 @@
 {
-  "name": "react-playground",
+  "name": "ractivejs-refluxjs-todomvc",
   "version": "0.0.1",
-  "description": "Project for testing ReactJS.",
+  "description": "Common TodoMVC created with RactiveJS and RefluxJS.",
   "main": "app.js",
   "scripts": {
     "test": "grunt test"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/erykpiast/react-playground.git"
+    "url": "git://github.com/erykpiast/ractivejs-refluxjs-todomvc.git"
   },
   "keywords": [
     "browserify",
@@ -19,9 +19,9 @@
   "author": "Eryk Napierała <eryk.piast@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/erykpiast/react-playground/issues"
+    "url": "https://github.com/erykpiast/ractivejs-refluxjs-todomvc/issues"
   },
-  "homepage": "https://github.com/erykpiast/react-playground",
+  "homepage": "https://github.com/erykpiast/ractivejs-refluxjs-todomvc",
   "devDependencies": {
     "brfs": "^1.2.0",
     "grunt": "~0.4",
@@ -43,7 +43,7 @@
   "dependencies": {
     "extend": "^2.0.0",
     "jquery": "^2.1.1",
-    "ractive": "erykpiast/ractive",
+    "ractive": "^0.6.1",
     "reflux": "^0.1.15",
     "todomvc-common": "^0.3.1"
   }

@@ -1,4 +1,4 @@
-react-playground
-================
+ractivejs-refluxjs-todomvc
+==========================
 
-Project for testing ReactJS.
+Common TodoMVC created with RactiveJS and RefluxJS.
