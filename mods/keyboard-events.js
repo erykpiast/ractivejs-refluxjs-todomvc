@@ -7,7 +7,7 @@ module.exports = (function() {
 				if (e.which === keyCode) {
 					fire({
 						node: node,
-						original: event
+						original: e
 					});
 				}
 			};

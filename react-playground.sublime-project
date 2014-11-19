@@ -22,7 +22,7 @@
                 ".crt",
                 ".tmp"
             ],
-            "name": "Browserify Seed",
+            "name": "RactiveJS + RefluxJS - TodoMVC",
             "path": "."
         }
     ]
