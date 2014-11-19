@@ -10,11 +10,23 @@ module.exports = function (grunt) {
         'watch:demo',
         'clean:demo'
     ]);
+
+    grunt.registerTask('publish-pages', [
+        'jshint',
+        'clean:demo',
+        'browserify:demo',
+        'gh-pages',
+        'clean:demo'
+    ]);
     
 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
         config: {
+            githubPages: {
+                base: 'demo',
+                files: [ 'index.html', 'demo.bundle.js', 'base.css' ]
+            },
             demo: {
                 server: {
                     port: process.env.PORT || 8080,
@@ -103,6 +115,12 @@ module.exports = function (grunt) {
                 defaultExt: 'html',
                 runInBackground: true
             }
+        },
+        'gh-pages': {
+            options: {
+                base: '<%= config.githubPages.base %>'
+                },
+            src: '<%= config.githubPages.files %>'
         }
     });
 
